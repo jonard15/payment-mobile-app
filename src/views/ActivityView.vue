@@ -18,26 +18,17 @@
             Transaction & Date
           </th>
           <th class="text-left">
-            Details
+            Amout
           </th>
         </tr>
       </thead>
       <tbody>
         <tr
           v-for="item in desserts"
-          :key="item.name"
+          :key="item.transaction"
         >
-          <td>{{ item.name }}</td>
-          <td>      
-              
-        <v-icon
-        small
-        class="mr-2"
-        color="cyan"
-        dark
-      >
-        mdi-eye
-      </v-icon></td>
+          <td>{{ item.transaction }}</td>
+          <td>{{ item.amount }}</td>
         </tr>
       </tbody>
     </template>
@@ -51,12 +42,12 @@
       return {
         desserts: [
           {
-            name: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, itaque.',
-            calories: 159,
+            transaction: 'ATM WITHRAWAL (May 10, 2022)',
+            amount:'₱5,000',
           },
           {
-            name: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, itaque.',
-            calories: 237,
+            transaction: 'CAH DEPOSIT (May 18, 2022)',
+            amount:'₱10,000',
           },
         ],
       }

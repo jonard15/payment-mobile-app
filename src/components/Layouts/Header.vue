@@ -60,7 +60,7 @@
           :key="item.title"
         >
           <v-list-item-avatar>
-            <v-img :src="item.avatar"></v-img>
+            <v-icon>{{item.icon}}</v-icon>
           </v-list-item-avatar>
 
           <v-list-item-content>
@@ -80,15 +80,21 @@ export default {
         items: [
         { header: 'Today' },
         {
-          avatar: 'https://cdn.vuetifyjs.com/images/lists/1.jpg',
-          title: 'Brunch this weekend?',
-          subtitle: `<span class="text--primary">Ali Connors</span> &mdash; I'll be in your neighborhood doing errands this weekend. Do you want to hang out?`,
+          icon: 'fa-solid fa-envelope-open',
+          title: 'Welcome Customer',
+          subtitle: `April 15 2021`,
         },
         { divider: true, inset: true },
         {
-          avatar: 'https://cdn.vuetifyjs.com/images/lists/2.jpg',
-          title: 'Summer BBQ <span class="grey--text text--lighten-1">4</span>',
-          subtitle: `<span class="text--primary">to Alex, Scott, Jennifer</span> &mdash; Wish I could come, but I'm out of town this weekend.`,
+          icon: 'fa-solid fa-envelope',
+          title: 'Loan Due Date',
+          subtitle: `April 20 2021`,
+        },
+        { divider: true, inset: true },
+        {
+          icon: 'fa-solid fa-envelope',
+          title: 'New Loan Promo',
+          subtitle: `May 10 2021`,
         },
       ],
   }),
