@@ -1,6 +1,6 @@
 <template>
-    <v-app id="main">
-    <v-main v-if="isLogin">
+  <v-app id="inspire">
+    <v-main>
       <v-container class="fill-height">
         <v-row align="center" justify="center">
           <v-col cols="12" sm="8" md="6">
@@ -11,16 +11,16 @@
                       <v-card-text class="mt-5">
                         <v-form>
                           <v-text-field
-                            value="72316103"
-                            label="MemberID"
-                            name="MemberID"
+                            v-model="formLogin.email"
+                            label="Email"
+                            name="Email"
                             prepend-icon="mdi-email"
                             type="text"
                             color="teal darken-2 accent-3"
                           />
 
                           <v-text-field
-                            value="Password"
+                            v-model="formLogin.password"
                             id="password"
                             label="Password"
                             name="password"
@@ -32,7 +32,7 @@
                         <h3 class="text-center mt-4">Forgot your password ?</h3>
                       </v-card-text>
                       <div class="text-center ma-3">
-                       <v-btn rounded color="blue-grey accent-3" @click.prevent="login" dark>LOG IN</v-btn>
+                        <v-btn rounded color="teal darken-2 accent-3" dark>LOG IN</v-btn>
                       </div>
                     </v-col>
                   </v-row>
@@ -41,47 +41,18 @@
         </v-row>
       </v-container>
     </v-main>
-        <div v-if="notLogin">
-        <!-- <app-header @toggle-drawer="$refs.navbar.drawer = !$refs.navbar.drawer"></app-header> -->
-        <app-header></app-header>
-        <navbar></navbar>
-
-        <v-main>
-            <v-container>
-                <router-view></router-view>
-            </v-container>
-        </v-main>
-        </div>
-
-        <!-- <app-footer></app-footer> -->
-    </v-app>
-
+  </v-app>
 </template>
 
 <script>
-import Navbar from './Navbar'
-import Header from './Header'
-import Footer from './Footer'
-
 export default {
-    name: 'App',
-    components: {
-        'navbar': Navbar,
-        'app-header': Header,
-        'app-footer': Footer,
+    data() {
+      return {
+        formLogin: ({
+          email: '',
+          password: '',
+        }),
+      }
     },
-  data() {
-    return {
-      notLogin:false,
-      isLogin:true
-    };
-  },
-    methods: {
-      login() {
-        this.notLogin =true;
-        this.isLogin =false;
-        this.$router.push("/home").catch(()=>{});
-      },
-    },
-}
+};
 </script>
