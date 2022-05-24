@@ -60,99 +60,114 @@
           </v-btn>
           <v-toolbar-title>Loan Details</v-toolbar-title>
         </v-toolbar>
-        <v-card-text>
-                    <v-card class="mt-5 mb-5">
-          <v-list-item-group class="flex justify-center" color="#FBE7C6">
-            <v-list-item>
-              <v-list-item-content>
-                <v-row>
-                  <v-col cols="12" md="4">
-                    <v-card outlined class="mx-auto mt-2" color="#FBE7C6">
-                      <v-list-item-title
-                        align="center"
-                        class="h5 font-weight-bold mt-5"
-                        >Borrower Slip No.</v-list-item-title
-                      >
-                      <v-list-item-subtitle
-                        align="center"
-                        class="h5 font-weight-bold mb-5"
-                        >L300603MF260422TD003</v-list-item-subtitle
-                      >
-                    </v-card>
-                  </v-col>
-                  <v-col cols="12" md="4">
-                    <v-card outlined class="mx-auto mt-2" color="#FBE7C6">
-                      <v-list-item-title
-                        align="center"
-                        class="h5 font-weight-bold mt-5"
-                        >Next Payment Due</v-list-item-title
-                      >
-                      <v-list-item-subtitle
-                        align="center"
-                        class="h5 font-weight-bold mb-5"
-                        >₱1,671.53</v-list-item-subtitle
-                      >
-                    </v-card>
-                  </v-col>
-                  <v-col cols="12" md="4">
-                    <v-card outlined class="mx-auto mt-2" color="#FBE7C6">
-                      <v-list-item-title
-                        align="center"
-                        class="h5 font-weight-bold mt-5"
-                        >Due Date</v-list-item-title
-                      >
-                      <v-list-item-subtitle
-                        align="center"
-                        class="h5 font-weight-bold mb-5"
-                        >June 24, 2022</v-list-item-subtitle
-                      >
-                    </v-card>
-                  </v-col>
-                </v-row>
-              </v-list-item-content>
-            </v-list-item>
-          </v-list-item-group>
 
-            <v-list-item two-line class="text-center">
-              <v-list-item-content>
-                <div class="mb-2">
-                  <v-btn small fab color="blue-grey" elevation="0">
-                    <v-icon color="white">mdi-eye</v-icon>
-                  </v-btn>
-                </div>
-                <v-list-item-title class="h1 mb-1 black--text">
-                  LOAN INFO
-                </v-list-item-title>
-              </v-list-item-content>
-            </v-list-item>
-            <!-- <div class="text-center">
+        <v-tabs centered v-model="tab">
+          <v-tab
+            v-for="(item,index) in items"
+            :key="index+'_title'"
+            class="pa-5"
+          >
+            <v-icon class="mr-5">{{item.icon}}</v-icon> {{ item.title }}
+          </v-tab>
+        </v-tabs>
+
+        <v-card-text>
+          <v-tabs-items v-model="tab">
+            <v-tab-item>
+              <v-card class="mt-5 mb-5">
+                <v-list-item-group class="flex justify-center" color="#FBE7C6">
+                  <v-list-item>
+                    <v-list-item-content>
+                      <v-row>
+                        <v-col cols="12" md="4">
+                          <v-card outlined class="mx-auto mt-2" color="#FBE7C6">
+                            <v-list-item-title
+                              align="center"
+                              class="h5 font-weight-bold mt-5"
+                              >Borrower Slip No.</v-list-item-title
+                            >
+                            <v-list-item-subtitle
+                              align="center"
+                              class="h5 font-weight-bold mb-5"
+                              >L300603MF260422TD003</v-list-item-subtitle
+                            >
+                          </v-card>
+                        </v-col>
+                        <v-col cols="12" md="4">
+                          <v-card outlined class="mx-auto mt-2" color="#FBE7C6">
+                            <v-list-item-title
+                              align="center"
+                              class="h5 font-weight-bold mt-5"
+                              >Next Payment Due</v-list-item-title
+                            >
+                            <v-list-item-subtitle
+                              align="center"
+                              class="h5 font-weight-bold mb-5"
+                              >₱1,671.53</v-list-item-subtitle
+                            >
+                          </v-card>
+                        </v-col>
+                        <v-col cols="12" md="4">
+                          <v-card outlined class="mx-auto mt-2" color="#FBE7C6">
+                            <v-list-item-title
+                              align="center"
+                              class="h5 font-weight-bold mt-5"
+                              >Due Date</v-list-item-title
+                            >
+                            <v-list-item-subtitle
+                              align="center"
+                              class="h5 font-weight-bold mb-5"
+                              >June 24, 2022</v-list-item-subtitle
+                            >
+                          </v-card>
+                        </v-col>
+                      </v-row>
+                    </v-list-item-content>
+                  </v-list-item>
+                </v-list-item-group>
+
+                <v-list-item two-line class="text-center">
+                  <v-list-item-content>
+                    <div class="mb-2">
+                      <v-btn small fab color="blue-grey" elevation="0">
+                        <v-icon color="white">mdi-eye</v-icon>
+                      </v-btn>
+                    </div>
+                    <v-list-item-title class="h1 mb-1 black--text">
+                      LOAN INFO
+                    </v-list-item-title>
+                  </v-list-item-content>
+                </v-list-item>
+                <!-- <div class="text-center">
               <v-btn color="blue-grey" class="ma-2 white--text">
                 loan Info
                 <v-icon right dark> mdi-eye </v-icon>
               </v-btn>
             </div> -->
-          </v-card>
-          <h1 class="text-center">
-            <v-icon>fa fa-calendar</v-icon> Payment Schedule
-          </h1>
-          <v-simple-table>
-            <template v-slot:default>
-              <thead>
-                <tr>
-                  <th class="text-left">Month</th>
-                  <th class="text-left">Pay Date</th>
-                  <th class="text-left">Amount Due</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr v-for="loan in loans" :key="loan.month_num">
-                  <td>{{ loan.month_num }}</td>
-                  <td>{{ loan.pay_date }}</td>
-                  <td>{{ loan.amount_due }}</td>
-                </tr>
-              </tbody>
-            </template>
-          </v-simple-table>
+              </v-card>
+              <h1 class="text-center">
+                <v-icon>fa fa-calendar</v-icon> Payment Schedule
+              </h1>
+              <v-simple-table>
+                <template v-slot:default>
+                  <thead>
+                    <tr>
+                      <th class="text-left">Month</th>
+                      <th class="text-left">Pay Date</th>
+                      <th class="text-left">Amount Due</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr v-for="loan in loans" :key="loan.month_num">
+                      <td>{{ loan.month_num }}</td>
+                      <td>{{ loan.pay_date }}</td>
+                      <td>{{ loan.amount_due }}</td>
+                    </tr>
+                  </tbody>
+                </template>
+              </v-simple-table>
+            </v-tab-item>
+          </v-tabs-items>
         </v-card-text>
       </v-card>
     </v-dialog>
@@ -227,6 +242,18 @@ data () {
             pay_date: 'December',
             amount_due: '₱1,671.53'
           },
+        ],
+        tab: null,
+				items:
+        [
+          {
+					title: 'Active Loans',
+					icon: 'fas fa-money-bill'
+				  },
+          {
+            title: 'Finished Loan',
+            icon: 'fa-check'
+          }
         ],
       }
     },
