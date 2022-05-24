@@ -1,39 +1,53 @@
 <template>
-<div>
-    <v-navigation-drawer class="hidden-md-and-down" v-model="isMobile" dark app mini-variant mini-variant-width="128" color="#23262D">
+  <div>
+    <v-navigation-drawer
+      class="hidden-md-and-down"
+      v-model="isMobile"
+      app
+      mini-variant
+      mini-variant-width="128"
+      color="#FBE7C6"
+    >
       <v-list>
-        <v-list-item-group color="cyan">
-            <v-list-item class="mb-4">
-              <v-list-item-content>
-                <v-icon align="center" class="mb-5"> fa-solid fa-building-columns</v-icon>
-                <v-list-item-subtitle align="center" class="caption">TAMPCO<br>APPS</v-list-item-subtitle>
-              </v-list-item-content>
-            </v-list-item>
+        <v-list-item-group color="#10A41A">
+          <v-list-item class="mb-4">
+            <v-list-item-content>
+              <v-icon align="center" class="mb-5">
+                fa-solid fa-building-columns</v-icon
+              >
+              <v-list-item-subtitle align="center" class="caption"
+                >TAMPCO<br />APPS</v-list-item-subtitle
+              >
+            </v-list-item-content>
+          </v-list-item>
         </v-list-item-group>
-        <v-list-item-group  v-for="(item, i) in items" :key="i" color="cyan">
-            <v-list-item link exact :to="item.path" v-if="item.title != 'QR'">
-              <v-list-item-content align="center">
-                <v-icon v-text="item.icon" class="mb-3" align="center"></v-icon>
-                <v-list-item-subtitle v-text="item.title" align="center" class="caption"></v-list-item-subtitle>
-              </v-list-item-content>
-            </v-list-item>
+        <v-list-item-group v-for="(item, i) in items" :key="i" color="#10A41A">
+          <v-list-item link exact :to="item.path" v-if="item.title != 'QR'">
+            <v-list-item-content align="center">
+              <v-icon v-text="item.icon" class="mb-3" align="center"></v-icon>
+              <v-list-item-subtitle
+                v-text="item.title"
+                align="center"
+                class="caption"
+              ></v-list-item-subtitle>
+            </v-list-item-content>
+          </v-list-item>
         </v-list-item-group>
       </v-list>
     </v-navigation-drawer>
 
-  <v-bottom-navigation
+    <v-bottom-navigation
       class="d-md-none"
-      dark app
+      app
       :value="selectedItem"
-      color="cyan"
-  >
+      color="#10A41A"
+    >
       <v-btn v-for="(item, i) in items" :key="i" :to="item.path">
         <span>{{item.title}}</span>
         <v-icon>{{item.icon}}</v-icon>
       </v-btn>
-  </v-bottom-navigation>
-</div>
-
+    </v-bottom-navigation>
+  </div>
 </template>
 
 <script>
