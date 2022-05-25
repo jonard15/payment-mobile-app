@@ -151,7 +151,6 @@ components: {
 data(){
     return{
         dialog:false
-
     }
 },
 methods:{
