@@ -48,47 +48,47 @@
         finishedLoans: [
         {
             month_num: '1',
-            pay_date: 'June',
+            pay_date: 'June 1, 2022',
             amount_due: '₱3,347.24'
         },
         {
             month_num: '2',
-            pay_date: 'July',
+            pay_date: 'July 1, 2022',
             amount_due: '₱3,347.24'
         },
         {
             month_num: '3',
-            pay_date: 'August',
+            pay_date: 'August 1, 2022',
             amount_due: '₱3,347.24'
         },
         {
             month_num: '4',
-            pay_date: 'September',
+            pay_date: 'September 1, 2022',
             amount_due: '₱3,347.24'
         },
         {
             month_num: '5',
-            pay_date: 'October',
+            pay_date: 'October 1, 2022',
             amount_due: '₱3,347.24'
         },
         {
             month_num: '6',
-            pay_date: 'December',
+            pay_date: 'December 1, 2022',
             amount_due: '₱3,347.24'
         },
         {
             month_num: '7',
-            pay_date: 'January',
+            pay_date: 'January 1, 2022',
             amount_due: '₱3,347.24'
         },
         {
             month_num: '8',
-            pay_date: 'February',
+            pay_date: 'February 1, 2022',
             amount_due: '₱3,347.24'
         },
         {
             month_num: '9',
-            pay_date: 'March',
+            pay_date: 'March 1, 2022',
             amount_due: '₱3,347.24'
         },
         ],

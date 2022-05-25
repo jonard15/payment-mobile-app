@@ -2,14 +2,14 @@
   <div>
     <v-toolbar flat>
       <v-toolbar-title class="flex text-center text-h4">
-        <span>Profile</span>
+        <span>My Profile</span>
       </v-toolbar-title>
     </v-toolbar>
     <v-divider></v-divider>
   <v-container>
     <v-card class="mx-auto" max-width="1000" tile>
-      <v-img max-height="390" max-width="1000" src="https://scontent.fcrk3-1.fna.fbcdn.net/v/t1.6435-9/156017517_108489284637020_3888468376845700199_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=RnZfTWyRF3gAX_wshXI&_nc_ht=scontent.fcrk3-1.fna&oh=00_AT90pBzqHsWtOpVQCC7lmC-GgYIXmMWRNs28K1uUjXIX2A&oe=62B43527"></v-img>
-      <v-row style="margin:2.5%;position:absolute; top: 350px">
+      <v-img max-height="450" max-width="1000" src="https://scontent.fcrk3-1.fna.fbcdn.net/v/t1.6435-9/156017517_108489284637020_3888468376845700199_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=RnZfTWyRF3gAX_wshXI&_nc_ht=scontent.fcrk3-1.fna&oh=00_AT90pBzqHsWtOpVQCC7lmC-GgYIXmMWRNs28K1uUjXIX2A&oe=62B43527"></v-img>
+      <v-row style="margin:2.5%;position:absolute; top: 360px">
         <v-list-item>
         <v-list-item-avatar size="100">
             <img
@@ -18,7 +18,7 @@
             >
           </v-list-item-avatar>
           <v-list-item-content>
-            <v-list-item-title class="title" style="margin-top:20px;">John Smith</v-list-item-title>
+            <v-list-item-title class="title" style="margin-left:-2px;margin-top:70px;">John Smith</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
       </v-row>
