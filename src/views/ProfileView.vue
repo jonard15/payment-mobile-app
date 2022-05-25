@@ -9,7 +9,7 @@
   <v-container>
     <v-card class="mx-auto" max-width="1000" tile>
       <v-img max-height="450" max-width="1000" src="https://scontent.fcrk3-1.fna.fbcdn.net/v/t1.6435-9/156017517_108489284637020_3888468376845700199_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=RnZfTWyRF3gAX_wshXI&_nc_ht=scontent.fcrk3-1.fna&oh=00_AT90pBzqHsWtOpVQCC7lmC-GgYIXmMWRNs28K1uUjXIX2A&oe=62B43527"></v-img>
-      <v-row style="margin:2.5%;position:absolute; top: 360px">
+      <v-row style="margin:2.5%;position:absolute; top:360px;">
         <v-list-item>
         <v-list-item-avatar size="100">
             <img
