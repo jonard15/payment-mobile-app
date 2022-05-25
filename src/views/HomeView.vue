@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <v-toolbar class="mt-5" flat>
+    <v-toolbar flat>
       <v-toolbar-title class="flex text-center text-h4">
         <span>My Account</span>
       </v-toolbar-title>
