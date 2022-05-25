@@ -2,7 +2,7 @@
   <div>
     <v-toolbar flat>
       <v-toolbar-title class="flex text-center text-h4">
-        <span>Activity</span>
+        <span>Transaction History</span>
       </v-toolbar-title>
     </v-toolbar>
     <v-divider></v-divider>

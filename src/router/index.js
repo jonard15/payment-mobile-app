@@ -3,7 +3,7 @@ import VueRouter from 'vue-router'
 import Login from '../views/Auth/Login.vue'
 import HomeView from '../views/HomeView.vue'
 import ProfileView from '../views/ProfileView.vue'
-import ActivityView from '../views/ActivityView.vue'
+import TransactionView from '../views/TransactionView.vue'
 
 Vue.use(VueRouter)
 
@@ -26,9 +26,9 @@ const routes = [
     
   },
   {
-    path: '/activity',
-    name: 'activity',
-    component: ActivityView
+    path: '/transaction',
+    name: 'transaction',
+    component: TransactionView
   }
 ]
 

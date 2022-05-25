@@ -1,5 +1,5 @@
 <template>
-<v-container class="mt-5 mb-5">
+<v-container fluid class="mt-5 mb-5">
   <v-row justify="center">
     <v-expansion-panels inset>
       <v-expansion-panel

@@ -33,37 +33,37 @@ data() {
         loans: [
         {
             month_num: '1',
-            pay_date: 'June',
+            pay_date: 'June 24, 2022',
             amount_due: '₱1,671.53',
             paid: true
         },
         {
             month_num: '2',
-            pay_date: 'July',
+            pay_date: 'July 24, 2022',
             amount_due: '₱1,671.53',
             paid: true
         },
         {
             month_num: '3',
-            pay_date: 'August',
+            pay_date: 'August 24, 2022',
             amount_due: '₱1,671.53',
             paid: true
         },
         {
             month_num: '4',
-            pay_date: 'September',
+            pay_date: 'September 24, 2022',
             amount_due: '₱1,671.53',
             paid: false
         },
         {
             month_num: '5',
-            pay_date: 'October',
+            pay_date: 'October 24, 2022',
             amount_due: '₱1,671.53',
             paid: false
         },
         {
             month_num: '6',
-            pay_date: 'December',
+            pay_date: 'December 24, 2022',
             amount_due: '₱1,671.53',
             paid: false
         },

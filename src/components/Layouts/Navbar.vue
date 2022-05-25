@@ -60,7 +60,7 @@ export default {
           { title: 'Home', icon: 'mdi-home', path:'home' },
           { title: 'QR', icon: 'mdi-qrcode', path:'qr' },
           { title: 'Profile', icon: ' mdi-clipboard-account', path:'profile' },
-          { title: 'Activity', icon: 'mdi-view-list', path:'activity' },
+          { title: 'Transaction', icon: 'mdi-view-list', path:'transaction' },
         ],
       value: 2
     }
