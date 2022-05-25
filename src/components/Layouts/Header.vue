@@ -50,7 +50,7 @@
         <v-btn icon @click="close">
           <v-icon>fa-solid fa-arrow-left</v-icon>
         </v-btn>
-        <v-toolbar-title>Inbox</v-toolbar-title>
+        <v-toolbar-title>Notification</v-toolbar-title>
       </v-toolbar>
 
       <v-list three-line>
