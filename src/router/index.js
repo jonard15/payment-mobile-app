@@ -5,6 +5,7 @@ import HomeView from '../views/HomeView.vue'
 import QrView from '../views/QrView.vue'
 import ProfileView from '../views/ProfileView.vue'
 import TransactionView from '../views/TransactionView.vue'
+import PatronageView from '../views/PatronageView.vue'
 
 Vue.use(VueRouter)
 
@@ -34,6 +35,11 @@ const routes = [
     path: '/transaction',
     name: 'transaction',
     component: TransactionView
+  },
+  {
+    path: '/patronage',
+    name: 'patronage',
+    component: PatronageView
   }
 ]
 

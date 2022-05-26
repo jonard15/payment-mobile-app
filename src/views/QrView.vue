@@ -7,7 +7,7 @@
     </v-toolbar>
     <v-divider class="mb-5"></v-divider>
         <qrcode-stream @decode="onDecode"></qrcode-stream>
-        <!-- <qrcode-drop-zone></qrcode-drop-zone> -->
+        <qrcode-drop-zone></qrcode-drop-zone>
         <!-- <qrcode-capture></qrcode-capture> -->
     </div>
 </template>
