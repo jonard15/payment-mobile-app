@@ -4,11 +4,11 @@
       <v-container class="fill-height">
         <v-row align="center" justify="center">
           <v-col cols="12" sm="8" md="6">
-            <h1 class="text-center display-2 blue-grey--text text--accent-3 mb-8">Tampco App</h1>
-            <v-card class="elevation-12">
-                  <v-row>
-                    <v-col cols="12" md="12">
-                      <v-card-text class="mt-5">
+            <v-card shaped color="#B6DCEA" class="elevation-12">
+                  <v-img class="ml-3" contain height="200px" position="center" src="https://scontent.fcrk3-1.fna.fbcdn.net/v/t1.6435-9/156017517_108489284637020_3888468376845700199_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=zL3L0RB_ijcAX-GYyIx&_nc_ht=scontent.fcrk3-1.fna&oh=00_AT9GHcWNlmnslcfVqctcVB4tsCh0wlTpJyRgC6fF0o5acQ&oe=62B43527"></v-img>
+                  <v-row justify="center">
+                    <v-col cols="9" md="9">
+                      <v-card-text>
                         <v-form>
                           <v-text-field
                             value="johnsmith12@email.com"
@@ -16,7 +16,7 @@
                             name="UserName"
                             prepend-icon="mdi-email"
                             type="text"
-                            color="teal darken-2 accent-3"
+                            color="green"
                           />
 
                           <v-text-field
@@ -26,13 +26,13 @@
                             name="password"
                             prepend-icon="mdi-lock"
                             type="password"
-                            color="teal darken-2 accent-3"
+                            color="green"
                           />
                         </v-form>
                         <h3 class="text-center mt-4">Forgot your password ?</h3>
                       </v-card-text>
-                      <div class="text-center ma-3">
-                       <v-btn rounded color="blue-grey accent-3" @click.prevent="login" dark>LOG IN</v-btn>
+                      <div class="text-center ma-5">
+                       <v-btn block color="green" @click.prevent="login" dark> <v-icon left>mdi-lock</v-icon>LOG IN</v-btn>
                       </div>
                     </v-col>
                   </v-row>
