@@ -9,7 +9,7 @@
         max-width="90"
         contain
       ></v-img>
-      <h2 class="d-md-none text-center ml-10 green--text font-weight-black">Welcome <br>Tampco Members!</h2>
+      <h2 class="d-md-none text-center ml-5 green--text font-weight-black">Welcome <br>Tampco Members!</h2>
       <v-spacer></v-spacer>
       <v-text-field
         color="white"
