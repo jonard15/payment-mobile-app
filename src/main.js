@@ -4,6 +4,8 @@ import './registerServiceWorker'
 import router from './router'
 import store from './store'
 import vuetify from './plugin/vuetify'
+import VueQrcodeReader from "vue-qrcode-reader";
+Vue.use(VueQrcodeReader);
 
 Vue.config.productionTip = false
 

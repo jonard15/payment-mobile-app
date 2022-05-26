@@ -2,6 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Login from '../views/Auth/Login.vue'
 import HomeView from '../views/HomeView.vue'
+import QrView from '../views/QrView.vue'
 import ProfileView from '../views/ProfileView.vue'
 import TransactionView from '../views/TransactionView.vue'
 
@@ -17,7 +18,11 @@ const routes = [
     path: '/home',
     name: 'home',
     component: HomeView,
-    meta: { requiresAuth: true }
+  },
+  {
+    path: '/qr',
+    name: 'qr',
+    component: QrView,
   },
   {
     path: '/profile',
