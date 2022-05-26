@@ -21,7 +21,7 @@
         class="mt-6 mr-2 hidden-md-and-down"
         sm="2"
       ></v-text-field>
-      <v-icon @click.stop="drawer = !drawer" color="#009688">fas fa-bell</v-icon>
+      <v-icon @click.stop="drawer = !drawer" color="green">fas fa-bell</v-icon>
     </v-app-bar>
 
     <v-navigation-drawer
@@ -32,11 +32,11 @@
       v-model="drawer"
       width="500"
     >
-      <v-toolbar color="cyan" dark>
+      <v-toolbar color="#B6DCEA" dark>
         <v-btn icon @click="close">
-          <v-icon>fa-solid fa-arrow-left</v-icon>
+          <v-icon color="black">fa-solid fa-arrow-left</v-icon>
         </v-btn>
-        <v-toolbar-title>Notification</v-toolbar-title>
+        <v-toolbar-title class="black--text">Notification</v-toolbar-title>
       </v-toolbar>
 
       <v-list three-line>
