@@ -6,17 +6,21 @@
       app
       mini-variant
       mini-variant-width="128"
-      color="#FBE7C6"
+      color="#B6DCEA"
     >
       <v-list>
         <v-list-item-group color="#10A41A">
           <v-list-item class="mb-4">
             <v-list-item-content>
-              <v-icon align="center" class="mb-5">
-                fa-solid fa-building-columns</v-icon
-              >
+              <v-img
+                class="mx-2"
+                src="https://scontent.fcrk3-1.fna.fbcdn.net/v/t1.6435-9/156017517_108489284637020_3888468376845700199_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=zL3L0RB_ijcAX-GYyIx&_nc_ht=scontent.fcrk3-1.fna&oh=00_AT9GHcWNlmnslcfVqctcVB4tsCh0wlTpJyRgC6fF0o5acQ&oe=62B43527"
+                max-height="100"
+                max-width="100"
+                contain
+              ></v-img>
               <v-list-item-subtitle align="center" class="caption"
-                >TAMPCO<br />APPS</v-list-item-subtitle
+                >Welcome<br />Tampco <br /> Members!</v-list-item-subtitle
               >
             </v-list-item-content>
           </v-list-item>
@@ -58,9 +62,10 @@ export default {
       selectedItem: 0,
         items: [
           { title: 'Home', icon: 'mdi-home', path:'home' },
-          { title: 'QR', icon: 'mdi-qrcode', path:'qr' },
           { title: 'Profile', icon: ' mdi-clipboard-account', path:'profile' },
+          { title: 'Patronage', icon: ' mdi-clipboard-account', path:'patronage' },
           { title: 'Transaction', icon: 'mdi-view-list', path:'transaction' },
+          { title: 'QR', icon: 'mdi-qrcode', path:'qr' },
         ],
       value: 2
     }

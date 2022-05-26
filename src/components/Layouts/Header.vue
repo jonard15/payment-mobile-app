@@ -1,29 +1,15 @@
 <template>
   <nav>
-    <v-system-bar app color="#FBE7C6" class="d-md-none" height="60">
-      <v-list-item-group class="flex justify-center mt-2" color="#FBE7C6">
-        <v-list-item class="mb-4">
-          <v-list-item-content>
-            <v-icon align="center" class="mt-4" medium>
-              fa-solid fa-building-columns</v-icon
-            >
-            <v-list-item-subtitle
-              align="center"
-              class="caption font-weight-bold"
-              >TAMPCO<br />APPS</v-list-item-subtitle
-            >
-          </v-list-item-content>
-        </v-list-item>
-      </v-list-item-group>
-    </v-system-bar>
-    <v-app-bar app class="line" height="90px">
-      <v-select
-        class="mt-6 mr-2"
-        sm="2"
-        label="PATRONAGE"
-        dense
-        solo
-      ></v-select>
+    <v-app-bar app color="#B6DCEA" class="line" height="90px">
+           <v-img
+           align="center"
+        class="d-md-none"
+        src="https://scontent.fcrk3-1.fna.fbcdn.net/v/t1.6435-9/156017517_108489284637020_3888468376845700199_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=zL3L0RB_ijcAX-GYyIx&_nc_ht=scontent.fcrk3-1.fna&oh=00_AT9GHcWNlmnslcfVqctcVB4tsCh0wlTpJyRgC6fF0o5acQ&oe=62B43527"
+        max-height="90"
+        max-width="90"
+        contain
+      ></v-img>
+      <h2 class="d-md-none text-center ml-10 green--text font-weight-black">Welcome <br>Tampco Members!</h2>
       <v-spacer></v-spacer>
       <v-text-field
         color="white"
@@ -35,7 +21,7 @@
         class="mt-6 mr-2 hidden-md-and-down"
         sm="2"
       ></v-text-field>
-      <v-icon @click.stop="drawer = !drawer">fas fa-bell</v-icon>
+      <v-icon @click.stop="drawer = !drawer" color="#009688">fas fa-bell</v-icon>
     </v-app-bar>
 
     <v-navigation-drawer
