@@ -11,9 +11,9 @@
                       <v-card-text class="mt-5">
                         <v-form>
                           <v-text-field
-                            value="72316103"
-                            label="MemberID"
-                            name="MemberID"
+                            value="johnsmith12@email.com"
+                            label="UserName"
+                            name="UserName"
                             prepend-icon="mdi-email"
                             type="text"
                             color="teal darken-2 accent-3"

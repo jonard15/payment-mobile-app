@@ -1,6 +1,6 @@
 <template>
   <div>
-    <v-card class="mt-5 mb-5">
+    <v-card elevation="10" class="mt-5 mb-5">
         <v-card-title class="justify-center">
             <v-icon class="mr-5">fa fa-calendar</v-icon> Payment Schedule
       </v-card-title>

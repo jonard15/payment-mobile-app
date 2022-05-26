@@ -9,11 +9,10 @@
     <v-container class="mt-5">
       <v-row>
         <v-col cols="6" sm="3" v-for="type in types" :key="type.title">
-          <v-hover v-slot="{ hover }" open-delay="200">
+          <v-hover>
+            <template v-slot:default="{ hover }">
             <v-card
               color="#B4F8C8"
-              :elevation="hover ? 16 : 2"
-              @click="openDialog(type)"
             >
               <v-row class="mb-2">
                 <v-col cols="12" sm="8">
@@ -42,7 +41,18 @@
                   </v-avatar>
                 </v-col>
               </v-row>
+
+        <v-fade-transition>
+          <v-overlay
+            v-if="hover && type.title === 'Borrower Slip No.'"
+            absolute
+            color="#036358"
+          >
+            <v-btn @click="openDialog(type)" small>See more Details</v-btn>
+          </v-overlay>
+        </v-fade-transition>
             </v-card>
+            </template>
           </v-hover>
         </v-col>
       </v-row>

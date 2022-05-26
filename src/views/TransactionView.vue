@@ -5,8 +5,9 @@
         <span>Transaction History</span>
       </v-toolbar-title>
     </v-toolbar>
-    <v-divider></v-divider>
+    <v-divider class="mb-5"></v-divider>
 
+  <v-card elevation="10" class="mx-auto" max-width="1200">
     <v-simple-table fixed-header height="600px">
       <template v-slot:default>
         <thead>
@@ -24,6 +25,8 @@
       </template>
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, itaque.
     </v-simple-table>
+  </v-card>
+
   </div>
 </template>
 <script>

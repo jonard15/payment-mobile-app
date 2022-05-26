@@ -1,6 +1,6 @@
 <template>
   <div>
-    <v-card class="mt-5 mb-5">
+    <v-card elevation="10" class="mt-5 mb-5">
       <v-list-item-group class="flex justify-center" color="#FBE7C6">
         <v-list-item>
           <v-list-item-content>
