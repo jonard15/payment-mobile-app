@@ -2,13 +2,17 @@
   <div>
     <v-toolbar flat>
       <v-toolbar-title class="flex text-center text-h4">
-        <span>Transaction History</span>
+        <span>My Transaction</span>
       </v-toolbar-title>
     </v-toolbar>
     <v-divider class="mb-5"></v-divider>
 
   <v-card elevation="10" class="mx-auto" max-width="1200">
-    <v-simple-table fixed-header height="600px">
+      <v-card-title class="justify-center">
+        <v-icon class="mr-5">fa fa-history</v-icon> Transaction History
+      </v-card-title>
+      <v-divider></v-divider>
+    <v-simple-table>
       <template v-slot:default>
         <thead>
           <tr>

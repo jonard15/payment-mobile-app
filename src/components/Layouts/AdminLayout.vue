@@ -2,10 +2,10 @@
     <v-app id="main">
     <v-main v-if="isLogin">
       <v-container class="fill-height">
-        <v-row align="center" justify="center">
+        <v-row justify="center">
           <v-col cols="12" sm="8" md="6">
             <v-card shaped color="#B6DCEA" class="elevation-12">
-                  <v-img class="ml-3" contain height="200px" position="center" src="https://scontent.fcrk3-1.fna.fbcdn.net/v/t1.6435-9/156017517_108489284637020_3888468376845700199_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=zL3L0RB_ijcAX-GYyIx&_nc_ht=scontent.fcrk3-1.fna&oh=00_AT9GHcWNlmnslcfVqctcVB4tsCh0wlTpJyRgC6fF0o5acQ&oe=62B43527"></v-img>
+                  <v-img class="ml-3" contain height="200px" src="https://scontent.fcrk3-1.fna.fbcdn.net/v/t1.6435-9/156017517_108489284637020_3888468376845700199_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=zL3L0RB_ijcAX-GYyIx&_nc_ht=scontent.fcrk3-1.fna&oh=00_AT9GHcWNlmnslcfVqctcVB4tsCh0wlTpJyRgC6fF0o5acQ&oe=62B43527"></v-img>
                   <v-row justify="center">
                     <v-col cols="9" md="9">
                       <v-card-text>
