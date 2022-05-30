@@ -48,7 +48,7 @@
             absolute
             color="#036358"
           >
-            <v-btn @click="openDialog(type)" small>See more Details</v-btn>
+            <!-- <v-btn @click="openDialog(type)" small>See more Details</v-btn> -->
           </v-overlay>
         </v-fade-transition>
             </v-card>
@@ -95,6 +95,11 @@ data () {
             title: 'ATM Balance',
             amount:'₱50,000',
             icon: 'fa-solid fa-money-bills'
+          },
+          {
+            title: 'Patronage',
+            amount:'',
+            icon: 'fas fa-hand-holding-usd'
           },
           {
             title: 'Borrower Slip No.',

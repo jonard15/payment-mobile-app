@@ -21,7 +21,12 @@
         class="mt-6 mr-2 hidden-md-and-down"
         sm="2"
       ></v-text-field>
-      <v-icon @click.stop="drawer = !drawer" color="green">fas fa-bell</v-icon>
+      <!-- <v-icon @click.stop="drawer = !drawer" color="green">fas fa-bell</v-icon> -->
+      <v-btn @click.stop="drawer = !drawer" text>
+        <v-badge content="2" color="error">
+          <v-icon small color="green">fas fa-bell</v-icon>
+        </v-badge>
+      </v-btn>
     </v-app-bar>
 
     <v-navigation-drawer

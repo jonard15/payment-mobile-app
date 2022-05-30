@@ -64,7 +64,7 @@ export default {
           { title: 'Home', icon: 'mdi-home', path:'home' },
           { title: 'QR', icon: 'mdi-qrcode', path:'qr' },
           { title: 'Profile', icon: ' mdi-clipboard-account', path:'profile' },
-          { title: 'Patronage', icon: 'fas fa-hand-holding-usd', path:'patronage' },
+          // { title: 'Patronage', icon: 'fas fa-hand-holding-usd', path:'patronage' },
           { title: 'Transaction', icon: 'mdi-view-list', path:'transaction' },
         ],
       value: 2
