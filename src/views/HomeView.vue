@@ -98,7 +98,7 @@ data () {
           },
           {
             title: 'Patronage',
-            amount:'',
+            amount:'empty',
             icon: 'fas fa-hand-holding-usd'
           },
           {
