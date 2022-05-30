@@ -45,11 +45,10 @@
         <v-fade-transition>
           <v-overlay
             v-if="hover && type.title === 'Borrower Slip No.'"
-            @click="openDialog(type)"
             absolute
             color="#036358"
           >
-            <!-- <v-btn @click="openDialog(type)" small>See more Details</v-btn> -->
+            <v-btn @click="openDialog(type)" small>See more Details</v-btn>
           </v-overlay>
         </v-fade-transition>
             </v-card>
