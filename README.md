@@ -1,4 +1,4 @@
-# tampco-mobile-app
+# payment-mobile-app
 
 ## Project setup
 ```
