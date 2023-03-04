@@ -20,7 +20,7 @@
                 contain
               ></v-img>
               <v-list-item-subtitle align="center" class="caption"
-                >Welcome<br />Tampco <br /> Members!</v-list-item-subtitle
+                >Welcome<br />Payment <br /> Apps!</v-list-item-subtitle
               >
             </v-list-item-content>
           </v-list-item>
