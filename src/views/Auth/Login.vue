@@ -4,7 +4,7 @@
       <v-container class="fill-height">
         <v-row align="center" justify="center">
           <v-col cols="12" sm="8" md="6">
-            <h1 class="text-center display-2 blue-grey--text text--accent-3 mb-8">Tampco App</h1>
+            <h1 class="text-center display-2 blue-grey--text text--accent-3 mb-8">Payment App</h1>
             <v-card class="elevation-12">
                   <v-row>
                     <v-col cols="12" md="12">
